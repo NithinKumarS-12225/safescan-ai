@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Lexend", sans-serif;
+  
+  --color-navy: #0B1222;
+  --color-safe: #22C55E;
+  --color-alert: #F59E0B;
+  --color-danger: #EF4444;
+}
+
+@layer base {
+  body {
+    @apply bg-navy text-white font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-display font-extrabold;
+  }
+}
+
+.neon-border {
+  box-shadow: 0 0 15px currentColor, inset 0 0 5px currentColor;
+}
+
+.chip-transition {
+  @apply transition-all duration-200 transform active:scale-95;
+}

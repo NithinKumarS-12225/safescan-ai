@@ -1,0 +1,6 @@
+{
+  "name": "SafeScan: The AI Grocery Guardian",
+  "description": "An accessibility-first AI scanner that identifies allergens in food products using high-contrast UI and Gemini AI.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["image_analysis"]
+}
